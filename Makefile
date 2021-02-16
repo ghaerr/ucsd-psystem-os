@@ -123,7 +123,8 @@ host_disk_kb := $(shell sh etc/host-disk-kb.sh $(host))
 # The -finline-math option tells the cross compiler to use the CSP math opcodes,
 # rather than calling the TRANSCEN intrinsic unit.
 #
-XCFLAGS = --arch=$(arch) -Wno-shadow
+#XCFLAGS = --arch=$(arch) -Wno-shadow
+XCFLAGS = -Wno-shadow
 
 #
 # The Cross Assembler Flags
